@@ -1,0 +1,198 @@
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: default;
+    user-select: none;
+}
+
+/* Light Mode Styles (Default) */
+body {
+    background-color: #48aaa5;
+    color: #333; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    padding: 30px;
+}
+
+/* Container Light Mode */
+section.container {
+    width: 100%;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1f4755; 
+    border-radius: 12px;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode Styles */
+.darkmodebody {
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 30px;
+}
+
+/* Dark Mode for Container */
+.darkmode-container {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Title styling */
+.title {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #cbf09a;
+}
+input { 
+    text-align: center; 
+}
+
+input[type=number] {
+        width: 170px;
+        height: 120px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+        font-size: 40px;
+}
+input[type=number]:focus {
+    width: 100%;
+  }
+/* Label and input styling */
+label {
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 8px;
+    color: #c3dbe0; 
+    margin-top: -50px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #e0fd4a;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    background-color: #204655;
+    color: #c0c0c0; 
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.selectOptions {
+    text-align-last:center;
+    padding-right: 29px;
+    direction: rtl;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #a8ff6e; 
+    box-shadow: (0 0 5px) rgba(87, 255, 177, 0.6); 
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2em;
+    background-color: #caf19a; 
+    color: #214655;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 1rem;
+}
+
+button:hover {
+    background-color: #dcf852;
+    box-shadow: 0 0 5px yellow; 
+}
+
+button:active {
+    background-color: #e0d538;
+    box-shadow: 0 0 5px rgb(218, 221, 12); 
+  }
+/* Result styling */
+p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #c3dbe0;
+}
+
+/* Number background styling */
+.number {
+    background: linear-gradient(135deg, #caf19a, #dcf852); 
+    color: #224553;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 15px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: center;
+    margin: 20px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 20px;
+}
+
+.number:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
+}
+
+    #icon {
+    margin-right: 0.4rem;
+    color: #caf19a; 
+}
+
+.signature {
+    font-size: 0.6rem;
+    color: #cef7b3;
+    text-align: center;
+    margin-top: -20px;
+    opacity: 0.2;
+    margin-bottom: 70px;
+}
+
+
+.title span::after{
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 3%;
+    border-left: 3px solid #1f4755;
+    max-height: 3rem;
+    right: -7;
+    animation: cursor 1s infinite;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+    @keyframes cursor{
+        to{
+            border-left: 3px solid #caf19a;
+            max-height: 3rem;
+        }
+    }

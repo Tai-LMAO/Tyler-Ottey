@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/aa39942bb5.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+        <div class="resize"></div>
+    </div> 
+    <section class="container">
+        <h1 class="title">TIP CALCULATOR<span></span></h1>
+        <p class="signature">Designed & Developed by Tyler Ottey</p>
+        <label for="amount">Bill Amount</label>
+        <input type="number" id="amount" placeholder="£" min="0" required>
+
+        <label for="percentage">Tip Percentage</label>
+        <select id="percentage" required>
+            <option selected disabled hidden>Select</option>
+            <option class="selectOptions" value="0.25">25%</option>
+            <option class="selectOptions" value="0.20">20%</option>
+            <option class="selectOptions" value="0.15">15%</option>
+            <option class="selectOptions" value="0.10">10%</option>
+            <option class="selectOptions" value="0.05">5%</option>
+        </select>
+        
+        <button id="calculate">Calculate</button>
+        
+        <p>Tip Amount: </p>
+        <br>
+        <i id="icon" class="fa-solid fa-sterling-sign fa-2x"></i> <span class="number" id="total">0</span>
+        <br>
+        <p>Total Amount (Bill + Tip):</p>
+        <br>
+        <i id="icon" class="fa-solid fa-sterling-sign fa-2x"></i><span class="number" id="totalAmount">0</span>
+        <!-- <button onclick="darkMode()">Toggle dark mode</button> -->
+    </section>
+
+
+</body>
+
+</html>
